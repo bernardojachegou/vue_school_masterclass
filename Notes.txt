@@ -1,0 +1,17 @@
+#############################################################################################
+-------------------------------------GETTING-STARTED-----------------------------------------
+#############################################################################################
+1. Installing Vue and tools:
+	1.1 Installing Vue and Vuter;
+	1.2 Installing VsCode and Nodejs;
+	1.3 Creating the project using a example template;
+
+2. Structuring the application:
+	2.1 Creating the data file to use as API;
+	2.2 Talking about islint (variables and webpack config);
+	2.3 Setting new configs to the first compoment;
+	2.4 Importing the data file inside the component;
+	2.5 Printing the data informations using the data.json;
+#############################################################################################
+----------------------------------------ROUTING-IN-VUE---------------------------------------
+#############################################################################################
