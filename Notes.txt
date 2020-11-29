@@ -3,15 +3,21 @@
 #############################################################################################
 1. Installing Vue and tools:
 	1.1 Installing Vue and Vuter;
-	1.2 Installing VsCode and Nodejs;
-	1.3 Creating the project using a example template;
+	1.2 Creating the project using a example template;
 
 2. Structuring the application:
-	2.1 Creating the data file to use as API;
-	2.2 Talking about islint (variables and webpack config);
-	2.3 Setting new configs to the first compoment;
-	2.4 Importing the data file inside the component;
-	2.5 Printing the data informations using the data.json;
+	2.1 Talking about islint (variables and webpack config);
+	2.2 Printing the data informations using v-for;
+	2.3 Applying a Theme a scoped css styling;
+	2.4 Important: Scoped css files makes the project more scalable;
+	2.5 Css frameworks must be imported globaly;
 #############################################################################################
 ----------------------------------------ROUTING-IN-VUE---------------------------------------
 #############################################################################################
+3. Using view Router to map components:
+	3.1 Flux just like React apps;
+	3.2 Using history mode to avoid reload;
+	3.3 Creating a component to se the threads (Attention to props getting id);
+	3.4 Importing new components inside components;
+	3.5 Getting the values of replies using Object.key(length);
+	3.6 Good practice -> Using computed properties to count anything in the app;
