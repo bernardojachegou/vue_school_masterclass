@@ -20,4 +20,16 @@
 	3.3 Creating a component to se the threads (Attention to props getting id);
 	3.4 Importing new components inside components;
 	3.5 Getting the values of replies using Object.key(length);
-	3.6 Good practice -> Using computed properties to count anything in the app;
+	3.6 Good practice -> Computed properties to count anything in the app; (reusability)
+	3.7 Creating a user (computed properties) to be easier readable;
+4. Routing:
+	4.1 <router-link> It seems line Link from React;
+	4.2 Good practice -> passing the name of the component and the params in the method;
+	4.2.1 It allow us to change the router but it still works;
+	4.3 Renaming components to be different from the pages Ex: PageHome.vue;
+	4.4 Webpack configuration is set to resolve('src') as an absolute path;
+	4.4.1 Creating a alias is good to set an absolute path configuration;
+	4.5 Good practice -> Creating a Notfound router to the Home page using (*);
+	4.6 Using CSS Modules to create unique styles for each page;
+	4.7 Good practice -> Using CamelCase in module styles to avoid using [];
+
