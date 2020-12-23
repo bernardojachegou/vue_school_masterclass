@@ -10,7 +10,7 @@
       </p>
       <p class="text-faded text-xsmall">
         By <a href="">{{ user.name }}</a
-        >, {{ thread.publishedAt }}.
+        >,<AppDate :timestamp="thread.publishedAt" />.
       </p>
     </div>
 
@@ -35,7 +35,11 @@
 
 <script>
 import sourceData from "@/data";
+import AppDate from "./AppDate";
 export default {
+  components: {
+    AppDate,
+  },
   props: {
     thread: {
       required: true,
