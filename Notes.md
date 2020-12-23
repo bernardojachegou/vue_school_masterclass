@@ -41,9 +41,9 @@
 
 **4. Organizing the App:**
 <ul style="list-style-type: none;">
-	<li>5.1 </li>
-	<li>5.2 </li>
-	<li>5.3 </li>
+	<li>5.1 Refactoring Components;</li>
+	<li>5.2 Explanation about to way binding;</li>
+	<li>5.3 Using v-model (v-bind and v-on);</li>
 	<li>5.4 </li>
 	<li>5.5 </li>
 	<li>5.6 </li>
