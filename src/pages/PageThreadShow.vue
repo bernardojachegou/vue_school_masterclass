@@ -38,10 +38,6 @@ export default {
     };
   },
 
-  // mounted() {
-  //   console.log(sourceData);
-  // },
-
   computed: {
     posts() {
       const postIds = Object.values(this.thread.posts);
