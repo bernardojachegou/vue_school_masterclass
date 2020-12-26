@@ -1,21 +1,21 @@
 <template>
   <div class="col-full">
     <h1>Welcome to the Vue Forum</h1>
-    <ThreadList :threads="threads" />
+    <ForumList :forums="forums" />
   </div>
 </template>
 
 <script>
 import sourceData from "@/data";
-import ThreadList from "@/components/ThreadList";
+import ForumList from "@/components/ForumList";
 
 export default {
   components: {
-    ThreadList,
+    ForumList,
   },
   data() {
     return {
-      threads: Object.values(sourceData.threads),
+      forums: Object.values(sourceData.forums),
       posts: sourceData.posts,
       users: sourceData.users,
     };
@@ -26,7 +26,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1,
 h2 {
