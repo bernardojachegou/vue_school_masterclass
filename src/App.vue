@@ -7,13 +7,7 @@
 </template>
 
 <script>
-import sourceData from "@/data";
-export default {
-  mounted() {
-    console.log(sourceData);
-  },
-  name: "app",
-};
+export default {};
 </script>
 
 <style>
