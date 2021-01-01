@@ -1,18 +1,20 @@
 <template>
   <div class="flex-grid">
-    <!-- <UserProfileCard
+    <UserProfileCard
+      v-if="!edit"
       :user="user"
       :userPostsCount="userPostsCount"
       :userThreadsCount="userThreadsCount"
-    /> -->
+    />
     <UserProfileCardEditor
+      v-else
       :user="user"
       :userPostsCount="userPostsCount"
       :userThreadsCount="userThreadsCount"
     />
     <div class="col-7 push-top">
       <div class="profile-header">
-        <span class="text-lead"> Joker's recent activity </span>
+        <span class="text-lead"> {{ user.username }} recent activity </span>
         <a href="#">See only started threads?</a>
       </div>
 
@@ -34,6 +36,12 @@ export default {
     PostList,
     UserProfileCard,
     UserProfileCardEditor,
+  },
+  props: {
+    edit: {
+      type: Boolean,
+      default: false,
+    },
   },
   computed: {
     ...mapGetters({
