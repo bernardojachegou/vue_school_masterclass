@@ -17,11 +17,19 @@ const makeAppendChildToParentMutation = ({ parent, child }) => (
 };
 
 export default new Vuex.Store({
-  state: { ...sourceData, authId: "NnooaWj4KHVxbhKwO1pEdfaQDsD2" },
+  state: {
+    categories: {},
+    forums: {},
+    threads: {},
+    posts: {},
+    users: {},
+    authId: "NnooaWj4KHVxbhKwO1pEdfaQDsD2"
+  },
 
   getters: {
     authUser(state) {
-      return state.users[state.authId];
+      // return state.users[state.authId];
+      return {};
     },
 
     userThreadsCount: state => id =>
