@@ -1,5 +1,5 @@
 <template>
-  <div class="col-full" :class="$style.centered">
+  <div v-if="asyncDataStatus_ready" class="col-full" :class="$style.centered">
     <h1 :class="$style.headingLarge">Not Found</h1>
     <p :class="$style.textLarge">
       Oops, We can't track you anymore,
@@ -9,7 +9,10 @@
 </template>
 
 <script>
-export default {};
+import asyncDataStatus from "@/mixins/asyncDataStatus";
+export default {
+  mixins: [asyncDataStatus],
+};
 </script>
 
 <style module>

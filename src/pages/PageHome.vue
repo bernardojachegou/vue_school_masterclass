@@ -1,5 +1,5 @@
 <template>
-  <div v-if="ready" class="col-full push-top">
+  <div v-if="asyncDataStatus_ready" class="col-full push-top">
     <h1>Welcome to the Vue Forum</h1>
     <CategoryList :categories="categories" />
   </div>
@@ -8,17 +8,14 @@
 <script>
 import { mapActions } from "vuex";
 import CategoryList from "@/components/CategoryList";
+import asyncDataStatus from "@/mixins/asyncDataStatus";
 
 export default {
   components: {
     CategoryList,
   },
 
-  data() {
-    return {
-      ready: false,
-    };
-  },
+  mixins: [asyncDataStatus],
 
   computed: {
     categories() {
@@ -40,7 +37,7 @@ export default {
         )
       )
       .then(() => {
-        this.ready = true;
+        this.asyncDataStatus_fetched();
       });
   },
 };
