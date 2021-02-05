@@ -3,16 +3,18 @@
     <TheNavbar />
     <div class="container">
       <router-view v-show="showPage" @ready="showPage = true" />
-      <div v-show="!showPage">Loading...</div>
+      <AppSpinner v-show="!showPage" class="spinner" />
     </div>
   </div>
 </template>
 
 <script>
 import TheNavbar from "@/components/TheNavbar";
+import AppSpinner from "@/components/AppSpinner";
 export default {
   components: {
     TheNavbar,
+    AppSpinner,
   },
 
   data() {
@@ -32,4 +34,8 @@ export default {
 
 <style>
 @import "assets/css/style.css";
+
+.spinner {
+  margin-top: 150px;
+}
 </style>
