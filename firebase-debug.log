@@ -1,0 +1,118 @@
+[debug] [2021-02-08T02:28:54.150Z] ----------------------------------------------------------------------
+[debug] [2021-02-08T02:28:54.154Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\berna\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js database:set // src/data.json
+[debug] [2021-02-08T02:28:54.155Z] CLI Version:   9.3.0
+[debug] [2021-02-08T02:28:54.155Z] Platform:      win32
+[debug] [2021-02-08T02:28:54.155Z] Node Version:  v12.16.1
+[debug] [2021-02-08T02:28:54.157Z] Time:          Sun Feb 07 2021 22:28:54 GMT-0400 (GMT-04:00)
+[debug] [2021-02-08T02:28:54.157Z] ----------------------------------------------------------------------
+[debug] [2021-02-08T02:28:54.157Z] 
+[debug] [2021-02-08T02:28:54.167Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-08T02:28:54.167Z] > authorizing via signed-in user
+[debug] [2021-02-08T02:28:54.169Z] [iam] checking project vue-school-forum-ecc88 for permissions ["firebase.projects.get","firebasedatabase.instances.update"]
+[debug] [2021-02-08T02:28:54.173Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-08T02:28:54.173Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-08T02:28:54.542Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Mon, 08 Feb 2021 02:28:53 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-08T02:28:54.550Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/vue-school-forum-ecc88:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update"]}
+[debug] [2021-02-08T02:28:55.481Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Feb 2021 02:28:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=714","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-08T02:28:55.483Z] > refreshing access token with scopes: []
+[debug] [2021-02-08T02:28:55.483Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-08T02:28:55.796Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 08 Feb 2021 02:28:55 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-08T02:28:55.802Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vue-school-forum-ecc88 [none]
+[debug] [2021-02-08T02:28:56.942Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vue-school-forum-ecc88 200
+[debug] [2021-02-08T02:28:56.942Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vue-school-forum-ecc88 {"projectId":"vue-school-forum-ecc88","projectNumber":"981864202775","displayName":"vue-school-forum","name":"projects/vue-school-forum-ecc88","resources":{"hostingSite":"vue-school-forum-ecc88","realtimeDatabaseInstance":"vue-school-forum-ecc88-default-rtdb"},"state":"ACTIVE"}
+[debug] [2021-02-08T02:28:56.943Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-08T02:28:56.943Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-08T02:28:57.243Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 08 Feb 2021 02:28:56 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-08T02:28:57.249Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/vue-school-forum-ecc88/locations/-/instances/vue-school-forum-ecc88-default-rtdb  
+ 
+[debug] [2021-02-08T02:28:58.479Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Feb 2021 02:28:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-08T02:28:58.736Z] TypeError [ERR_INVALID_URL]: Invalid URL: https://
+    at onParseError (internal/url.js:257:9)
+    at new URL (internal/url.js:333:5)
+    at addDatabaseNamespace (C:\Users\berna\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:70:20)
+    at Object.getDatabaseUrl (C:\Users\berna\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:55:12)
+    at Command.actionFn (C:\Users\berna\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-set.js:33:26)
+    at C:\Users\berna\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:163:25
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2021-02-08T02:30:06.446Z] ----------------------------------------------------------------------
+[debug] [2021-02-08T02:30:06.449Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\berna\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js database:set // src/data.json -y
+[debug] [2021-02-08T02:30:06.449Z] CLI Version:   9.3.0
+[debug] [2021-02-08T02:30:06.449Z] Platform:      win32
+[debug] [2021-02-08T02:30:06.449Z] Node Version:  v12.16.1
+[debug] [2021-02-08T02:30:06.451Z] Time:          Sun Feb 07 2021 22:30:06 GMT-0400 (GMT-04:00)
+[debug] [2021-02-08T02:30:06.451Z] ----------------------------------------------------------------------
+[debug] [2021-02-08T02:30:06.451Z] 
+[debug] [2021-02-08T02:30:06.460Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-08T02:30:06.461Z] > authorizing via signed-in user
+[debug] [2021-02-08T02:30:06.463Z] [iam] checking project vue-school-forum-ecc88 for permissions ["firebase.projects.get","firebasedatabase.instances.update"]
+[debug] [2021-02-08T02:30:06.468Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/vue-school-forum-ecc88:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update"]}
+[debug] [2021-02-08T02:30:07.503Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Feb 2021 02:30:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=820","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-08T02:30:07.505Z] > refreshing access token with scopes: []
+[debug] [2021-02-08T02:30:07.505Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-08T02:30:07.777Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 08 Feb 2021 02:30:07 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-08T02:30:07.784Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vue-school-forum-ecc88 [none]
+[debug] [2021-02-08T02:30:08.881Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vue-school-forum-ecc88 200
+[debug] [2021-02-08T02:30:08.882Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vue-school-forum-ecc88 {"projectId":"vue-school-forum-ecc88","projectNumber":"981864202775","displayName":"vue-school-forum","name":"projects/vue-school-forum-ecc88","resources":{"hostingSite":"vue-school-forum-ecc88","realtimeDatabaseInstance":"vue-school-forum-ecc88-default-rtdb"},"state":"ACTIVE"}
+[debug] [2021-02-08T02:30:08.882Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-08T02:30:08.882Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-08T02:30:09.155Z] <<< HTTP RESPONSE 200 {"date":"Mon, 08 Feb 2021 02:30:08 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-08T02:30:09.160Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/vue-school-forum-ecc88/locations/-/instances/vue-school-forum-ecc88-default-rtdb  
+ 
+[debug] [2021-02-08T02:30:10.368Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Feb 2021 02:30:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-08T02:30:10.809Z] TypeError [ERR_INVALID_URL]: Invalid URL: https://
+    at onParseError (internal/url.js:257:9)
+    at new URL (internal/url.js:333:5)
+    at addDatabaseNamespace (C:\Users\berna\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:70:20)
+    at Object.getDatabaseUrl (C:\Users\berna\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:55:12)
+    at Command.actionFn (C:\Users\berna\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-set.js:33:26)
+    at C:\Users\berna\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:163:25
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2021-02-08T02:30:35.682Z] ----------------------------------------------------------------------
+[debug] [2021-02-08T02:30:35.685Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\berna\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js database:set // src/data.json -y
+[debug] [2021-02-08T02:30:35.686Z] CLI Version:   9.3.0
+[debug] [2021-02-08T02:30:35.686Z] Platform:      win32
+[debug] [2021-02-08T02:30:35.686Z] Node Version:  v12.16.1
+[debug] [2021-02-08T02:30:35.688Z] Time:          Sun Feb 07 2021 22:30:35 GMT-0400 (GMT-04:00)
+[debug] [2021-02-08T02:30:35.688Z] ----------------------------------------------------------------------
+[debug] [2021-02-08T02:30:35.688Z] 
+[debug] [2021-02-08T02:30:35.699Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-08T02:30:35.699Z] > authorizing via signed-in user
+[debug] [2021-02-08T02:30:35.701Z] [iam] checking project vue-school-forum-ecc88 for permissions ["firebase.projects.get","firebasedatabase.instances.update"]
+[debug] [2021-02-08T02:30:35.706Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/vue-school-forum-ecc88:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update"]}
+[debug] [2021-02-08T02:30:36.739Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Feb 2021 02:30:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=791","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-08T02:30:36.742Z] > refreshing access token with scopes: []
+[debug] [2021-02-08T02:30:36.742Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-08T02:30:37.005Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 08 Feb 2021 02:30:36 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-08T02:30:37.012Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vue-school-forum-ecc88 [none]
+[debug] [2021-02-08T02:30:38.116Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vue-school-forum-ecc88 200
+[debug] [2021-02-08T02:30:38.116Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vue-school-forum-ecc88 {"projectId":"vue-school-forum-ecc88","projectNumber":"981864202775","displayName":"vue-school-forum","name":"projects/vue-school-forum-ecc88","resources":{"hostingSite":"vue-school-forum-ecc88","realtimeDatabaseInstance":"vue-school-forum-ecc88-default-rtdb"},"state":"ACTIVE"}
+[debug] [2021-02-08T02:30:38.116Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-08T02:30:38.117Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-08T02:30:38.374Z] <<< HTTP RESPONSE 200 {"date":"Mon, 08 Feb 2021 02:30:37 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-08T02:30:38.379Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/vue-school-forum-ecc88/locations/-/instances/vue-school-forum-ecc88-default-rtdb  
+ 
+[debug] [2021-02-08T02:30:39.621Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Feb 2021 02:30:38 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-08T02:30:39.878Z] TypeError [ERR_INVALID_URL]: Invalid URL: https://
+    at onParseError (internal/url.js:257:9)
+    at new URL (internal/url.js:333:5)
+    at addDatabaseNamespace (C:\Users\berna\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:70:20)
+    at Object.getDatabaseUrl (C:\Users\berna\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:55:12)
+    at Command.actionFn (C:\Users\berna\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-set.js:33:26)
+    at C:\Users\berna\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:163:25
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: An unexpected error has occurred.
