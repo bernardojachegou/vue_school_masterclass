@@ -132,7 +132,6 @@ export default {
       const registeredAt = Math.floor(Date.now() / 1000);
       const usernameLower = username.toLowerCase();
       email = email.toLowerCase();
-
       const user = {
         avatar,
         email,
@@ -141,7 +140,6 @@ export default {
         usernameLower,
         registeredAt
       };
-
       firebase
         .database()
         .ref("users")
@@ -163,7 +161,7 @@ export default {
       .createUserWithEmailAndPassword(email, password)
       .then(user => {
         return dispatch("createUser", {
-          id: user.uid,
+          id: user.user.uid,
           email,
           name,
           username,

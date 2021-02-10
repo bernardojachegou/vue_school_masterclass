@@ -75,6 +75,7 @@ export default {
       },
     };
   },
+
   methods: {
     register() {
       this.$store
@@ -82,6 +83,7 @@ export default {
         .then(() => this.$router.push("/"));
     },
   },
+
   created() {
     this.$emit("ready");
   },
