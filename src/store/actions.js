@@ -171,6 +171,19 @@ export default {
       });
   },
 
+  signInWithEmailAndPassword(context, { email, password }) {
+    return firebase.auth().signInWithEmailAndPassword(email, password);
+  },
+
+  signOut({ commit }) {
+    return firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        commit("setAuthId", null);
+      });
+  },
+
   updateThread({ state, commit, dispatch }, { title, text, id }) {
     return new Promise((resolve, reject) => {
       const thread = state.threads[id];
@@ -202,6 +215,13 @@ export default {
 
   updateUser({ commit }, user) {
     commit("setUser", { userId: user[".key"], user });
+  },
+
+  fetchAuthUser({ dispatch, commit }) {
+    const userId = firebase.auth().currentUser.uid;
+    return dispatch("fetchUser", { id: userId }).then(() => {
+      commit("setAuthId", userId);
+    });
   },
 
   fetchCategory: ({ dispatch }, { id }) =>
