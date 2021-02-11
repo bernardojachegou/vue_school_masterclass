@@ -1,5 +1,5 @@
 <template>
-  <div v-if="asyncDataStatus_ready" class="flex-grid">
+  <div class="flex-grid">
     <h1>My Profile</h1>
     <!--<UserProfileCard-->
     <!--v-if="!edit"-->
@@ -27,8 +27,6 @@ import PostList from "@/components/PostList";
 import UserProfileCard from "@/components/UserProfileCard";
 import UserProfileCardEditor from "@/components/UserProfileCardEditor";
 import { mapGetters } from "vuex";
-import asyncDataStatus from "@/mixins/asyncDataStatus";
-import store from "@/store";
 
 export default {
   components: {
@@ -36,8 +34,6 @@ export default {
     UserProfileCard,
     UserProfileCardEditor,
   },
-
-  mixins: [asyncDataStatus],
 
   props: {
     edit: {
@@ -61,16 +57,9 @@ export default {
     },
   },
 
-  beforeRouteEnter(to, from, next) {
-    if (store.state.authId) {
-      next();
-    } else {
-      next({ name: "Home" });
-    }
-  },
-
   created() {
     this.$emit("ready");
+    console.log("Profile page");
   },
 };
 </script>
