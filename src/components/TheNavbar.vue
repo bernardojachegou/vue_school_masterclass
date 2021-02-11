@@ -32,7 +32,7 @@
             <div class="triangle-drop"></div>
             <ul class="dropdown-menu">
               <li class="dropdown-menu-item">
-                <router-link :to="{ name: 'Profile' }"
+                <router-link :to="{ name: 'PageProfile' }"
                   >View Profile</router-link
                 >
               </li>

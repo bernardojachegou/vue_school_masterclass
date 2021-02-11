@@ -24,6 +24,10 @@ export default {
     Vue.set(state.threads, threadId, thread);
   },
 
+  setUnsubscribeAuthObserver(state, unsubscribe) {
+    state.unsubscribeAuthObserver = unsubscribe;
+  },
+
   appendPostToThread: makeAppendChildToParentMutation({
     parent: "threads",
     child: "posts"
