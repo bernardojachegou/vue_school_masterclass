@@ -80,13 +80,18 @@ export default {
     register() {
       this.$store
         .dispatch("registerUserWithEmailAndPassword", this.form)
-        .then(() => this.$router.push("/"));
+        .then(() => this.successRedirect());
     },
 
     registerWithGoogle() {
       this.$store
         .dispatch("signInWithGoogle")
-        .then(() => this.$router.push("/"));
+        .then(() => this.successRedirect());
+    },
+
+    successRedirect() {
+      const redirectTo = this.$route.query.redirectTo || { name: "PageHome" };
+      this.$router.push(redirectTo);
     },
   },
 
