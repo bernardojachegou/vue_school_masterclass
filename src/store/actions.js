@@ -14,7 +14,7 @@ export default {
             id: snapshot.key,
             item: snapshot.val()
           });
-          resolve(state[resource][id]);
+          resolve(state[resource].items[id]);
         });
     });
   },
