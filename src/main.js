@@ -2,12 +2,13 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from "vue";
 import firebase from "firebase/app";
+import Vuelidate from "vuelidate";
 import App from "./App";
 import router from "./router";
 import store from "@/store";
-
 import AppDate from "@/components/AppDate";
 
+Vue.use(Vuelidate);
 Vue.component("AppDate", AppDate);
 
 Vue.config.productionTip = false;
