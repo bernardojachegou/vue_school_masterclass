@@ -109,7 +109,9 @@ export default {
     },
 
     successRedirect() {
-      const redirectTo = this.$route.query.redirectTo || { name: "PageHome" };
+      const redirectTo = this.$route.query.redirectTo || {
+        name: "PageProfile",
+      };
       this.$router.push(redirectTo);
     },
   },
